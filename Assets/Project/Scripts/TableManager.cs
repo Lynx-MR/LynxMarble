@@ -62,6 +62,7 @@ namespace Lynx.Marble
                 spawner.GetComponent<Spawner>().itemRestScale = items[i].baseScale;
                 spawner.transform.localPosition = Quaternion.AngleAxis((360 / items.Length) * i, Vector3.up) * new Vector3(tableRadius, 0, 0);
             }
+            RecenterTable();
         }
 
 
@@ -92,11 +93,7 @@ namespace Lynx.Marble
         /// </summary>
         public void RecenterTable()
         {
-            XRHand leftHand = LynxHandtrackingAPI.LeftHand;
-            if(leftHand.GetJoint(XRHandJointID.Wrist).TryGetPose(out Pose pose))
-            {
-                tableMover.position = Camera.main.transform.position + Camera.main.transform.forward * 0.5f;
-            }
+            tableMover.position = Camera.main.transform.position + Camera.main.transform.forward * 0.5f;
         }
 
         #endregion
