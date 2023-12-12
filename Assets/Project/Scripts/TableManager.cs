@@ -7,7 +7,6 @@
 
 using System.Collections;
 using UnityEngine;
-using UnityEngine.XR.Hands;
 using UnityEngine.XR.Interaction.Toolkit;
 
 namespace Lynx.Marble
@@ -64,7 +63,6 @@ namespace Lynx.Marble
             }
             RecenterTable();
         }
-
 
         #region PUBLIC METHODES
 
