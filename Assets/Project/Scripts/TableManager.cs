@@ -54,6 +54,8 @@ namespace Lynx.Marble
             XRSimpleInteractable RotatorXrsi = tableRotator.GetComponent<XRSimpleInteractable>();
             RotatorXrsi.firstSelectEntered.AddListener(StartTableRotation);
             RotatorXrsi.lastSelectExited.AddListener(StopTableRotation);
+            LynxHandtrackingAPI.LeftHandDynamicUpdate += LeftHandUpdate;
+            LynxHandtrackingAPI.LeftHandDynamicUpdate += RightHandUpdate;
 
             for(int i = 0; i< items.Length; ++i)
             {
@@ -65,6 +67,21 @@ namespace Lynx.Marble
             RecenterTable();
         }
 
+        #region PRIVATE METHODES
+        private void LeftHandUpdate()
+        {
+            XRHand hand = LynxHandtrackingAPI.LeftHand;
+            if(hand.GetJoint(XRHandJointID.Palm).TryGetPose(out Pose palmPose))
+            {
+                LineRenderer rend = GetComponent<LineRenderer>();
+            }
+        }
+
+        private void RightHandUpdate()
+        {
+
+        }
+        #endregion
 
         #region PUBLIC METHODES
 
