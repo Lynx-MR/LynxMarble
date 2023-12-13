@@ -91,7 +91,10 @@ namespace Lynx.Marble
         /// </summary>
         public void RecenterTable()
         {
-            tableMover.position = Camera.main.transform.position + Camera.main.transform.forward * 0.5f;
+            Vector3 offset = Camera.main.transform.forward * 0.5f;
+            offset.Scale(new Vector3(1, 0, 1));
+            offset.y -= 0.4f;
+            tableMover.position = Camera.main.transform.position + offset;
         }
 
         #endregion
