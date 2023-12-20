@@ -134,10 +134,8 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.3.3
-  preloadedAssets:
-  - {fileID: -8640236473251913707, guid: f026901993c76864a90c72a121b4cd4a, type: 2}
-  - {fileID: 792580158859389143, guid: e04970c101cb2bb41a1d21ec429c4e1f, type: 2}
+  bundleVersion: 0.3.4
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -157,12 +155,12 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Lynx.MarbleGame
+    Android: com.lynx.marblerush
   buildNumber:
     Standalone: 0
     iPhone: 0
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 0
+  overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 29
   AndroidTargetSdkVersion: 29
