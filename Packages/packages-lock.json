@@ -21,13 +21,6 @@
       },
       "url": "https://package.openupm.com"
     },
-    "com.ultraleap.tracking": {
-      "version": "https://github.com/ultraleap/UnityPlugin.git?path=/Packages/Tracking",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "0982718655c62864af2c8021669ac027d49419ef"
-    },
     "com.unity.collab-proxy": {
       "version": "2.0.4",
       "depth": 0,
